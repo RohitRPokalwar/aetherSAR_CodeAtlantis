@@ -1,0 +1,32 @@
+﻿================================================================
+  SAR Pipeline Edge-Case Diagnostic
+================================================================
+
+  Model : C:\Users\Jay\Downloads\IIITSricity-final-ig\IIITSricity-main\models\ssdd_yolov8s_110e10\weights\best.pt
+  Tile  : 640x640   Conf threshold: 0.1
+
+----------------------------------------------------------------
+  CHECK 1 -- Ship on tile boundary
+    Left tile detections : 5
+    Right tile detections: 1
+  Result: PASS
+----------------------------------------------------------------
+  CHECK 2 -- Overlapping tiles (duplicate detection)
+  Total raw bounding boxes from 2 tiles: 2
+  NOTE: Duplicate detections present -- NMS required
+  Result: PASS
+----------------------------------------------------------------
+  CHECK 3 -- Centre vs edge confidence
+  Confidence at tile centre : 0.8501
+  Confidence at tile edge   : 0.8720
+  Delta confidence          : 2.2 pp
+  Edge confidence >= centre (unusual but possible)
+  Result: PASS
+================================================================
+
+  SUMMARY: 3/3 checks passed
+
+    boundary              PASS
+    overlap               PASS
+    confidence            PASS
+

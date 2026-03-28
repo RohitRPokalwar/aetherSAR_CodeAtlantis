@@ -1,0 +1,5 @@
+python scripts/preprocess_sentinel.py --input "C:\Users\RRP\Downloads\IIITSricity-main\IIITSricity-main\ship-detection-sar\data\Official-SSDD-OPEN\BBox_SSDD\voc_style\JPEGImages_test\file.tiff" --output data/inference_tiles
+
+
+
+python scripts/infer_and_evaluate.py --model "C:\Users\RRP\Downloads\IIITSricity-main\IIITSricity-main\ship-detection-sar\models\runs\yolov8n_sar3\weights\best.pt" --source data/inference_tiles  
