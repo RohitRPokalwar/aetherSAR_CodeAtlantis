@@ -48,7 +48,7 @@ data/samples/
 data/inference_tiles/
 outputs/
 *.pdf
-*.html
+# *.html (Removed to allow index.html)
 *.gif
 
 # OS Files
